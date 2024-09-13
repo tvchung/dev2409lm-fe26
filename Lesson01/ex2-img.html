@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ hiển thị hình ảnh</title>
+</head>
+<body>
+    <h1>Thẻ hiển thị hình ảnh</h1>
+    <hr>
+    <pre>
+        - Sử dụng thẻ img để hiển thị hình ảnh
+        - img: các thuộc tính thường dùng
+            + src = url (nguồn tài nguyên ảnh)
+                ++ url: có loại cơ bản (đường dẫn tuyệt đối / đường dẫn tương đối) 
+                    +++ url: tuyệt đối 
+                        [giao thức]://domain/path 
+                        ví dụ: 
+                            https://devmaster.edu.vn/images/logo.png 
+                    +++ url: tương đối (tài nguyên trong ứng dụng site)
+                        [pathFolder]/[file] 
+                        ../[pathfolder]/file 
+
+                        ví dụ: 
+                            images/logo.png
+                            ../abc.jpg 
+
+            + alt: nội dung miêu tả 
+    </pre>
+    <hr>
+    <h2>Sử dụng đường dẫn tuyệt đối </h2>
+    <img src="https://devmaster.edu.vn/images/logo.png" alt="Devmaster Academy" />
+    <hr>
+    <h2>Đường dẫn tương đối </h2>
+    <img src="images/logo.png" alt="Devmaster"  width="100px" />
+    <br>
+    <img src="images/php.jpg" alt="Lập trình PHP" /> 
+    <h2>Sử dụng ảnh cùng thư mục chứa trang html</h2>
+    <img src="csharp.jpg" alt="csharp" />
+    <h2>Sử dụng ảnh ở ngoài thư mục chứa trang html </h2>
+    <img src="../java_form.jpg" alt="java form">
+</body>
+</html>
